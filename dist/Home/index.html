@@ -156,14 +156,16 @@
                 </div>
 
                 <!-- slider/carousel starts here -->
-                    <div class="text-4xl dark:text-white font-medium px-3 mt-20"> Previous devotional </div>
-            <div class="flex " style="">
+    <div class="text-4xl dark:text-white font-medium px-3 mt-20"> Previous devotional </div>
+    
+            <div class="relative flex" style="">
                
-             <div class=" mb-5 siema mt-7 px-3 overflow-scroll sm:overscroll-none positive">  
-                <div class="prev absolute self-center py-1 px-3 bg-white border-2 border-gray-400 cursor-pointer flex-shrink">
+                <div style="" class=" prev right-0 z-10 absolute self-center py-1 px-3 bg-white border-2 border-gray-400 cursor-pointer flex-shrink">
                     Prev 
                 </div>
-
+                
+                <div class=" mb-5 siema mt-7 px-3 overflow-scroll sm:overscroll-none">  
+                   
                             <div class="rounded-xl overflow-hidden max-w-full mr-10 " style="height: 200px;">
                                 <img src="../../src/assets/sfi3.jpg" class="w-full h-auto ">
                             </div>
@@ -211,14 +213,11 @@
                             <div class="rounded-xl overflow-hidden max-w-full mr-10 " style="height: 200px; ">
                                 <img src="../../src/assets/sfi9.jpg" class="w-full h-auto ">
                             </div>   
-
-                            <div class="next  absolute self-center py-1 px-3 bg-white border-2 border-gray-400 cursor-pointer flex-shrink">
-                                Next 
-                            </div>
+                         
                 </div>
-                <!-- <div class="next  self-center py-1 px-3 bg-white border-2 border-gray-400 cursor-pointer flex-shrink">
-                    Next 
-                </div> -->
+                <div class="next absolute self-center py-1 px-3 bg-white border-2 border-gray-400 cursor-pointer flex-shrink">
+                    Next
+                </div>
             </div>
 
                   
@@ -248,10 +247,10 @@ const mySiema = new Siema({
     }    
 });
 
-document.querySelector('.prev').addEventListener('click', ()=> mySiema.prev())
 
 document.querySelector('.next').addEventListener('click', ()=> mySiema.next())
 
+document.querySelector('.prev').addEventListener('click', ()=> mySiema.prev())
 </script>
             
 </body>
