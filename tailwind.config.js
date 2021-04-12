@@ -1,5 +1,6 @@
 module.exports = {
-  purge: [],
+  purge: [  './dist/Home/home.html',
+],
   darkMode: 'class',
   
   theme: {
