@@ -157,7 +157,12 @@
 
                 <!-- slider/carousel starts here -->
                     <div class="text-4xl dark:text-white font-medium px-3 mt-20"> Previous devotional </div>
-                <div class=" mb-5 siema mt-7 px-3 overflow-scroll sm:overscroll-none">
+            <div class="flex " style="">
+               
+             <div class=" mb-5 siema mt-7 px-3 overflow-scroll sm:overscroll-none positive">  
+                <div class="prev absolute self-center py-1 px-3 bg-white border-2 border-gray-400 cursor-pointer flex-shrink">
+                    Prev 
+                </div>
 
                             <div class="rounded-xl overflow-hidden max-w-full mr-10 " style="height: 200px;">
                                 <img src="../../src/assets/sfi3.jpg" class="w-full h-auto ">
@@ -205,14 +210,18 @@
 
                             <div class="rounded-xl overflow-hidden max-w-full mr-10 " style="height: 200px; ">
                                 <img src="../../src/assets/sfi9.jpg" class="w-full h-auto ">
-                            </div>  
-                            
-                            d
+                            </div>   
+
+                            <div class="next  absolute self-center py-1 px-3 bg-white border-2 border-gray-400 cursor-pointer flex-shrink">
+                                Next 
+                            </div>
                 </div>
+                <!-- <div class="next  self-center py-1 px-3 bg-white border-2 border-gray-400 cursor-pointer flex-shrink">
+                    Next 
+                </div> -->
+            </div>
 
-                    <button class="prev"> Previous </button>
-
-                    <button class="next"> Next </button>
+                  
 
                 <!-- slider and carousel ends here -->
 
@@ -234,7 +243,8 @@ const mySiema = new Siema({
 
     perPage : {
         400: 2,
-        1024:5 
+        1024:5,
+        320:2
     }    
 });
 
