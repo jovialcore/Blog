@@ -1,0 +1,14 @@
+.bg-cat-image  {
+    background: linear-gradient(to right, rgb(0 0 0 / 14%), rgb(0 0 0 / 5%)), url(../src/assets/sfi7.jpg) no-repeat center;
+    background-size: cover; 
+}
+
+.bg-cat-imag-text {
+    background:transparent !important;
+   
+}
+
+/* this is for the divider */
+hr  {
+    border-bottom-width: 0;
+}
