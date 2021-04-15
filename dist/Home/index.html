@@ -223,8 +223,6 @@
                 </div>
             </div>
 
-                <!-- slider and carousel ends here -->
-
             </div>
 
 
@@ -237,7 +235,7 @@
             <!-- categories -->
                 <div class="max-w-sm sm:container mx-auto sm:px-0 px-5" style="">
                   
-                        <h5 class="text-4xl ">New Sermons</h5>
+                        <h5 class="text-2xl text-white my-3">New Sermons</h5>
                         <div class="flex flex-wrap mb-3 content-between text-white w-full h-28 lg:h-auto sm:w-6/12 text-center" style=""> 
                             <div class="inline-block p-2 border-2 border-gray-400 rounded-md w-28 cursor-pointer mr-5 self-center ">Motivationals</div>
                             <div class="inline-block p-2  border-2 border-gray-400 rounded-md w-28 cursor-pointer mr-5 self-center">Sermons</div>
@@ -323,8 +321,70 @@
                             </div>
                         </div>
                     </div>
+            </div>
+
+        <div class="max-w-sm sm:container mx-auto sm:px-0 px-5">
+            <div class="text-4xl dark:text-white font-medium px-3 mt-8"> Instagram </div>
+             
+    
+                <div class=" mb-5 siemaTwo mt-7 px-3 overflow-scroll sm:overscroll-none">  
+                            <div class="rounded-xl overflow-hidden max-w-full mr-10 " style="height: 200px;">
+                                <img src="../../src/assets/sfi3.jpg" class="w-full h-auto ">
+                            </div>
+
+                            <div class="rounded-xl overflow-hidden max-w-full mr-10 " style="height: 200px; ">
+                                <img src="../../src/assets/sfi7.jpg" class="w-full h-auto ">
+                            </div>
+
+                            <div class="rounded-xl overflow-hidden max-w-full mr-10 " style="height: 200px; ">
+                                <img src="../../src/assets/sfi10.jpg" class="w-full h-auto ">
+                            </div>
+
+                            <div class="rounded-xl overflow-hidden max-w-full mr-10 " style="height: 200px; ">
+                                <img src="../../src/assets/day3.jpg" class="w-full h-auto ">
+                            </div>
+
+
+                            <div class="rounded-xl overflow-hidden max-w-full mr-10 " style="height: 200px; ">
+                                <img src="../../src/assets/sfi9.jpg" class="w-full h-auto ">
+                            </div>  
+                            
+                            <div class="rounded-xl overflow-hidden max-w-full mr-10 " style="height: 200px; ">
+                                <img src="../../src/assets/sfi10.jpg" class="w-full h-auto ">
+                            </div>
+
+                            <div class="rounded-xl overflow-hidden max-w-full mr-10 " style="height: 200px; ">
+                                <img src="../../src/assets/day3.jpg" class="w-full h-auto ">
+                            </div>
+
+
+                            <div class="rounded-xl overflow-hidden max-w-full mr-10 " style="height: 200px; ">
+                                <img src="../../src/assets/sfi9.jpg" class="w-full h-auto ">
+                            </div>  
+
+
+                            <div class="rounded-xl overflow-hidden max-w-full mr-10 " style="height: 200px; ">
+                                <img src="../../src/assets/sfi10.jpg" class="w-full h-auto ">
+                            </div>
+
+                            <div class="rounded-xl overflow-hidden max-w-full mr-10 " style="height: 200px;">
+                                <img src="../../src/assets/day3.jpg" class="w-full h-auto ">
+                            </div>
+
+
+                            <div class="rounded-xl overflow-hidden max-w-full mr-10 " style="height: 200px; ">
+                                <img src="../../src/assets/sfi9.jpg" class="w-full h-auto ">
+                            </div>   
+                         
+                </div>
         </div>
                             <!--end of section for another category here -->
+
+
+                            <!-- instagram section -->
+
+                
+                            <!-- end of instagram section -->
 
      
 
@@ -339,7 +399,7 @@
 <script>
 
 const mySiema = new Siema({
-
+    selector: '.siema',
     perPage : {
         400: 2,
         1024:5,
@@ -347,10 +407,30 @@ const mySiema = new Siema({
     }    
 });
 
-
 document.querySelector('.next').addEventListener('click', ()=> mySiema.next())
 
 document.querySelector('.prev').addEventListener('click', ()=> mySiema.prev())
+
+//this is for the second one
+
+const mySiemaTwo = new Siema({
+    selector: '.siemaTwo',
+    duration: 250,
+    loop:true,
+    perPage : {
+        400: 2,
+        1024:5,
+        320:2
+    }    
+});
+
+// listen for keydown event
+setInterval(() => mySiemaTwo.next(), 1000)
+
+// document.querySelector('.nextTwo').addEventListener('click', ()=> mySiemaTwo.next())
+
+// document.querySelector('.prevTwo').addEventListener('click', ()=> mySiemaTwo.prev())
+
 </script>
             
 </body>
