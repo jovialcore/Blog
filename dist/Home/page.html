@@ -39,9 +39,9 @@
     </div>
     
 
-    <div   class="lg:content-center lg:items-center  hidden md:block mt-2 lg:mt-0 z-20 " id="nav-content">
+    <div   class="lg:content-center lg:items-center w-full sm:w-auto hidden md:block mt-2 lg:mt-0 z-20 " id="nav-content" style="">
       
-       <ul class="list-reset md:flex md:flex-wrap justify-end items-center mx-w-sm">
+       <ul class="list-reset md:flex md:flex-wrap  justify-end items-center mx-w-sm">
           <li class="mr-3 py-2 lg:py-0">
              <a class="inline-block py-2 px-4 text-gray-900 dark:text-white font-bold no-underline" href="#">Home</a>
           </li>
@@ -301,6 +301,19 @@
                    <!-- js file for dark mode -->
 <script src="../../src/assets/js/darkmode.js">  </script>
                          <!--end of js file for dark mode -->
+
+<script>
+//   js for navbar navigation
+
+document.getElementById('nav-toggle').addEventListener('click', function(){
+
+    const navMenu = document.getElementById('nav-content')
+
+    navMenu.classList.toggle('hidden')
+
+});
+
+</script>
 
 </body>
 </html>
